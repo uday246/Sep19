@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<table border="1" style="  border-collapse: collapse; background-color:#85C1E9">
+
+<tr><td>Week One $</td><td><input id="w1"/></td></tr>
+<tr><td>Week Two $</td><td><input id="w2"/></td></tr>
+<tr><td>Week Three $</td><td><input id="w3"/></td></tr>
+<tr><td>Week Four $</td><td><input id="w4"/></td></tr>
+<tr><td colspan="2" align="center"><button onclick="myFunction()">Calculate Benefit</button></td></tr>
+<tr><td>Total Benefit $</td><td><input id="total"/></td></tr>
+</table>
+
+<script>
+function myFunction() {
+  document.getElementById("total").value = parseInt(document.getElementById("w1").value)+parseInt(document.getElementById("w2").value)+parseInt(document.getElementById("w3").value)+parseInt(document.getElementById("w3").value);
+}
+</script>
+
+</body>
+</html>
